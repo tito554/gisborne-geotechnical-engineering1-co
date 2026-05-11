@@ -25,7 +25,12 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
     .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
+    
 .servicio:hover { border-color: var(--primary); }
 
 details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
@@ -71,7 +76,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat-sub[hidden] { display: none; }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 summary::-webkit-details-marker { display: none; }
-    main { padding: 1.5rem; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -94,7 +99,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
@@ -132,7 +137,9 @@ details[open] summary::before { content: '− '; }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
-    .content-area { flex-direction: column; }</style>
+    
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>Local geotechnical conditions in Gisborne</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Gisborne sits at 38.66° south, directly exposed to the Pacific cyclone corridor. The 2020 flooding event that cut SH35 and triggered hundreds of shallow landslides across the region was a blunt reminder: slopes that looked stable in February failed in July when antecedent moisture pushed soil suction to zero. This city’s residential fringe is climbing into terrain where 15° to 25° slopes are common, and where even a 1.5-metre cut can daylight a weak bedding plane. A slope stability analysis is not a paperwork step—it is the difference between a consented subdivision and a costly remediation after the next heavy-rainfall event. We model both drained and undrained conditions, applying NZGS guideline parameters for residual strength in remoulded soils, and we include seismic loading per NZS 1170.5:2004 because the Hikurangi subduction zone is capable of generating a magnitude-8.0 earthquake less than 100 km offshore. Ignoring that combination of high groundwater and seismic demand has led to failures in Gisborne that engineers still reference in regional case studies.</p>
             </section>
 
@@ -201,6 +210,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What does a slope stability analysis in Gisborne typically cost?</summary><p>For a residential or small subdivision slope in the Gisborne area, a complete assessment—including targeted drilling, laboratory testing, and limit-equilibrium modelling—typically falls between NZ$2,140 and NZ$7,900. The spread depends on slope height, access constraints, number of cross-sections required, and whether seasonal groundwater monitoring is needed to satisfy council conditions.</p></details><details><summary>When does Gisborne District Council require a slope stability report?</summary><p>Under NZS 4404:2010 and the council’s earthworks consent triggers, a slope stability analysis is generally required for cuts or fills exceeding 1.5 m in height, any earthwork on slopes steeper than 15°, and building platforms within the ‘hill country’ or ‘coastal erosion’ overlays shown on the district planning maps.</p></details><details><summary>How do you account for earthquakes in a Gisborne slope assessment?</summary><p>We derive the horizontal seismic coefficient from NZS 1170.5:2004, using the site subsoil class determined by CPT or borehole shear-wave velocity data. Because Gisborne sits above the Hikurangi subduction zone, the analysis often includes a sensitivity check at a higher seismic demand to ensure the slope retains adequate post-earthquake integrity.</p></details><details><summary>What’s the difference between a desktop assessment and a detailed analysis?</summary><p>A desktop assessment uses existing geological maps, aerial photographs, and published geotechnical data to screen for obvious hazards—useful for early feasibility. A detailed analysis adds site-specific drilling, laboratory shear-strength testing, and numerical modelling to calculate a quantifiable factor of safety. Council almost always requires the detailed version for consent lodgement.</p></details>
             </section>
 

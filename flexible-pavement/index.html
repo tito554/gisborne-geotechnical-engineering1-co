@@ -25,7 +25,12 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
     .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
+    
 .servicio:hover { border-color: var(--primary); }
 
 details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
@@ -71,7 +76,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat-sub[hidden] { display: none; }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 summary::-webkit-details-marker { display: none; }
-    main { padding: 1.5rem; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -94,7 +99,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
@@ -132,7 +137,9 @@ details[open] summary::before { content: '− '; }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
-    .content-area { flex-direction: column; }</style>
+    
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>Local geotechnical conditions in Gisborne</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Gisborne’s post-war expansion pushed residential roads onto the Gisborne Flats with minimal earthworks, leaving pavement formations sitting directly on saturated alluvium. Subsequent subdivision on the hill slopes introduced cut-to-fill transitions that create differential settlement zones. When a pavement is designed without a site-specific soaked CBR profile, the first wet winter triggers longitudinal cracking along the fill edge. Add the region’s seismic activity—the Hikurangi subduction interface lies just offshore—and you get the additional demand of post-earthquake serviceability. Our designs incorporate the NZTA’s lifeline corridor requirements where applicable, checking that the pavement structure remains trafficable after a 1-in-500-year event, not just under day-one loading.</p>
             </section>
 
@@ -201,6 +210,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What is the typical cost for a flexible pavement design package in Gisborne?</summary><p>Depending on project length and the number of test pits or boreholes required, a full pavement investigation and design package in the Gisborne area falls between NZ$2,730 and NZ$9,060. A short driveway on a known subgrade sits at the lower end; a subdivision road with multiple soil units and traffic modelling occupies the upper range.</p></details><details><summary>Which CBR value do you use for Gisborne’s silty subgrades?</summary><p>We always run a four-day soaked CBR per NZS 4407. In the Poverty Bay flats, soaked values of 2–3% are common. For hillslope colluvium we may see 5–8%, but we never assume a value without laboratory confirmation because the difference changes the required basecourse thickness by 50 mm or more.</p></details><details><summary>Do you design for heavy forestry vehicles as well as highway traffic?</summary><p>Yes. We model the specific axle loads and tyre pressures of loaded logging trucks and aggregate haulers, then check the pavement against both rutting and fatigue criteria. On unsealed roads we also specify a wearing course gravel that meets TNZ M/6 gradings and a minimum soaked CBR for the compacted formation.</p></details>
             </section>
 

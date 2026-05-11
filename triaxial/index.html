@@ -25,7 +25,12 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
     .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
+    
 .servicio:hover { border-color: var(--primary); }
 
 details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
@@ -71,7 +76,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat-sub[hidden] { display: none; }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 summary::-webkit-details-marker { display: none; }
-    main { padding: 1.5rem; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -94,7 +99,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
@@ -132,7 +137,9 @@ details[open] summary::before { content: '− '; }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
-    .content-area { flex-direction: column; }</style>
+    
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>Local geotechnical conditions in Gisborne</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>A GDS triaxial cell capable of 2 MPa confining pressure sits in the Dunedin laboratory, but specimens arrive from Gisborne in thin-walled Shelby tubes sealed with microcrystalline wax. The real risk lives in sample disturbance before the membrane even touches the soil. Weathered mudstone recovered from rotary-cored boreholes near the Waipaoa River often contains micro-fractures that open during stress relief; back-pressure saturation can mask this damage if the technician does not compare the initial tangent modulus against expected values for the material. A triaxial test that reports a friction angle 3–5° too low because of sample disturbance may trigger an unnecessary retaining wall upgrade costing tens of thousands of dollars. Conversely, testing only one specimen at a single confining pressure—rather than three to define a failure envelope—leaves the cohesion intercept unconstrained, a dangerous shortcut in Gisborne where true cohesion in partially saturated surface soils can exceed 15 kPa. The IANZ-accredited lab rejects specimens with visible cracks or slumping and logs the sample condition on the test report. Isotropic consolidation to the estimated in-situ mean effective stress precedes shear, and the rate is selected using consolidation data so that pore pressure equalization is achieved before peak.</p>
             </section>
 
@@ -201,6 +210,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What is the typical cost of a triaxial test on a Gisborne soil sample?</summary><p>A single triaxial test generally falls between NZ$3,320 and NZ$4,110 depending on the drainage condition (CU versus CD), the number of confining pressures required, and whether multi-stage testing is appropriate. A full three-specimen suite with pore pressure measurement sits at the upper end of that range because of the extended shearing time and detailed data reduction involved.</p></details><details><summary>Which drainage condition should I specify for a retaining wall design in Gisborne’s clay soils?</summary><p>For the short-term, end-of-construction condition, a consolidated-undrained test with pore pressure measurement supplies the undrained shear strength Su and effective stress parameters φ’ and c’. If the wall backfill is free-draining and the native clay will consolidate over time, a consolidated-drained test or CU with pore pressure measurement provides the drained strength parameters for long-term assessment. The choice depends on whether the critical loading stage occurs before or after excess pore pressures dissipate.</p></details><details><summary>How long does a triaxial test program take from sample receipt to final report?</summary><p>A standard three-specimen CU suite typically requires 10 to 14 working days. Consolidated-drained tests extend the timeline to three weeks or more because the shearing rate is governed by pore pressure equalization criteria. Multi-stage tests can shorten the turnaround by roughly 30 percent since only one specimen is consolidated and sheared, but the report must document the limitations in defining the cohesion intercept precisely.</p></details><details><summary>What sample quality is required for a reliable triaxial test result?</summary><p>Undisturbed Shelby tube samples or block samples are essential; highly disturbed SPT split-spoon samples cannot yield valid triaxial parameters. The lab inspects each specimen for fissures, desiccation cracks, and tube expansion before trimming. Gisborne’s weathered mudstone is particularly sensitive to stress relief, so tubes must be wax-sealed immediately after extrusion in the field and transported upright. Specimens with visible disturbance are rejected and the condition is noted on the final report.</p></details>
             </section>
 

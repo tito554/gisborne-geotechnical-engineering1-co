@@ -25,7 +25,12 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
     .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
+    
 .servicio:hover { border-color: var(--primary); }
 
 details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
@@ -71,7 +76,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat-sub[hidden] { display: none; }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 summary::-webkit-details-marker { display: none; }
-    main { padding: 1.5rem; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -94,7 +99,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
@@ -132,7 +137,9 @@ details[open] summary::before { content: '− '; }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
-    .content-area { flex-direction: column; }</style>
+    
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>Local geotechnical conditions in Gisborne</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Gisborne's port and logging infrastructure expanded rapidly through the 1960s, and much of the flat land along Awapuni Road and the inner harbour was reclaimed using dredged harbour mud capped with a metre of granular fill. Today that same land hosts container yards and processing sheds where rigid pavements carry forklifts with axle loads exceeding 12 tonnes per wheel. The differential settlement across these reclaimed zones can reach 40 mm within the first five years as the underlying marine clay consolidates under the weight of both fill and slab. If the pavement design ignores this long-term settlement, the joints open up, water infiltrates, and the pumping action under heavy braking erodes the base course from the edge inward. We model the consolidation timeline with oedometer data from undisturbed Shelby tube samples and then specify a reinforced slab with load-transfer dowels at every contraction joint, sized to bridge a 50 mm void without exceeding the steel's fatigue endurance limit.</p>
             </section>
 
@@ -201,6 +210,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What does rigid pavement design cost for a Gisborne project?</summary><p>A full design package including subgrade investigation, DCP profiling, laboratory flexural strength testing, and jointing plans typically falls between NZ$3,570 and NZ$10,320 depending on the area and the number of loading zones. A small workshop pad at a lifestyle block runs toward the lower end, while a multi-zone container yard with variable subgrade conditions and detailed reinforcement schedules sits at the upper range.</p></details><details><summary>How do you account for Gisborne's seismic risk in a rigid pavement design?</summary><p>We assess the subgrade for liquefaction susceptibility using SPT-based methods per the NZGS guideline. For sites where the Factor of Safety against liquefaction drops below 1.2 under a 500-year return period event, we specify a reinforced slab with a thickened edge beam that acts as a grade beam, tying the pavement together so it can span localised loss of support without catastrophic cracking at the joints.</p></details><details><summary>What is the typical design life and joint spacing for a concrete hardstand?</summary><p>We design industrial rigid pavements for a 25-year structural life under the forecast traffic spectrum. For unreinforced slabs on a well-prepared base, joint spacing follows the 24-times-thickness rule — a 200 mm slab gets joints at 4.8 metres maximum, and we reduce that to 4.0 metres where the k-value drops below 40 MPa/m to keep the joint opening within the sealant's movement capability.</p></details>
             </section>
 

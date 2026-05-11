@@ -25,7 +25,12 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
     .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
+    
 .servicio:hover { border-color: var(--primary); }
 
 details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
@@ -71,7 +76,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat-sub[hidden] { display: none; }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 summary::-webkit-details-marker { display: none; }
-    main { padding: 1.5rem; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -94,7 +99,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
@@ -132,7 +137,9 @@ details[open] summary::before { content: '− '; }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
-    .content-area { flex-direction: column; }</style>
+    
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>Local geotechnical conditions in Gisborne</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Gisborne's 38,000 residents live on a coastal plain where the water table sits high—often less than 2 metres below ground in the flat areas. Combine that with the region's history of major rain events like Cyclone Bola in 1988, and you get a soil profile that swings between saturated and dry within weeks. Atterberg limits testing catches the moisture content where the fine-grained soil changes from plastic to liquid behaviour. Miss that window, and you risk placing fill that turns to slurry after a heavy rain, or designing pavements that rut prematurely. The NZS 3404 standard ties earthworks compaction windows directly to the plastic limit, so skipping this test means you are running blind on moisture conditioning. For Gisborne's silty clay loams, the plastic limit often sits around 18-22%, and site water must be managed strictly around that number.</p>
             </section>
 
@@ -201,6 +210,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What do Atterberg limits tests cost in Gisborne?</summary><p>Standard Atterberg limits testing on a single sample runs between NZ$100 and NZ$170. Batch pricing applies for larger projects with multiple samples.</p></details><details><summary>How long does an Atterberg limits test take?</summary><p>Standard turnaround is 3 to 5 working days from sample receipt. We can expedite to 24 hours for urgent earthworks decisions, subject to lab capacity.</p></details><details><summary>What soil types in Gisborne need Atterberg limits testing?</summary><p>Any fine-grained material—silts, clays, and silty clays—found across the Poverty Bay flats, Wainui subdivisions, and East Coast hill country. If the material passes the 425 µm sieve, the Atterberg test applies. Sandy gravels with less than 12% fines generally do not require it.</p></details>
             </section>
 

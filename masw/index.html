@@ -25,7 +25,12 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
     .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
+    
 .servicio:hover { border-color: var(--primary); }
 
 details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
@@ -71,7 +76,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat-sub[hidden] { display: none; }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 summary::-webkit-details-marker { display: none; }
-    main { padding: 1.5rem; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -94,7 +99,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
@@ -132,7 +137,9 @@ details[open] summary::before { content: '− '; }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
-    .content-area { flex-direction: column; }</style>
+    
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>Local geotechnical conditions in Gisborne</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>The spread of 24 geophones looks simple: orange cables, metal spikes, a laptop on a folding table. The risk sits in the interpretation layer. A poorly picked dispersion curve, or an inversion run without realistic layer constraints, can shift VS30 by 50 m/s and change the site class from C to D. That difference triggers deeper piles, thicker raft slabs, or a full liquefaction mitigation scope. Our processing workflow uses two independent software packages for cross-validation, and every profile is reviewed by a senior geophysicist familiar with East Coast stratigraphy. We also reject surveys with low signal-to-noise ratio and reshoot with a larger source if needed, rather than delivering noisy data that looks acceptable on paper.</p>
             </section>
 
@@ -201,6 +210,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What does a MASW survey cost for a typical Gisborne section?</summary><p>Most single-building surveys fall between NZ$2,540 and NZ$4,490 depending on access, array length, and whether passive-source recording is required for deeper profiles.</p></details><details><summary>How long does the field work take?</summary><p>A standard 46-metre array with 24 geophones takes about 90 minutes to lay out, shoot, and pack up. Processing and reporting add two to three working days.</p></details><details><summary>Can you test through concrete or asphalt?</summary><p>Yes. We bolt geophones to pavement using quick-set plaster or use spike bases through thin asphalt. The surface wave method does not require borehole access, so hardstand areas are not a problem.</p></details><details><summary>What site class does Gisborne typically fall into?</summary><p>There is no single answer. The Waipaoa floodplain often returns Class D, while weathered rock on the Kaiti and Whataupoko hills can reach Class B or C. Every site needs its own measurement.</p></details><details><summary>Is MASW accepted by Gisborne District Council?</summary><p>Yes. Our reports follow NZS 1170.5 and MBIE guidance on geophysical site classification. We include raw dispersion curves and inversion parameters so Council reviewers can verify the results independently.</p></details>
             </section>
 

@@ -25,7 +25,12 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
     .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
+    
 .servicio:hover { border-color: var(--primary); }
 
 details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
@@ -71,7 +76,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat-sub[hidden] { display: none; }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 summary::-webkit-details-marker { display: none; }
-    main { padding: 1.5rem; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -94,7 +99,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
@@ -132,7 +137,9 @@ details[open] summary::before { content: '− '; }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
-    .content-area { flex-direction: column; }</style>
+    
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>Local geotechnical conditions in Gisborne</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>The CPT rig we deploy in Gisborne is a 20-tonne tracked unit that pushes a 15 cm² cone at a constant 2 cm/s, recording tip resistance, sleeve friction, and pore pressure every 10 mm. This level of resolution is non-negotiable when mapping thin, loose sand seams that can cause a bearing failure even if the average profile looks competent. In the Whataupoko hills, where cut-and-fill terraces transition rapidly into natural slopes, we often supplement the CPT with dynamic pore pressure dissipation tests to understand how quickly the soil can drain excess pressure during shaking. Skipping this step in Gisborne’s layered geology is a gamble that no structural engineer should take, especially given the city’s proximity to the Hikurangi subduction zone, which generates events with strong long-period energy that are particularly damaging to saturated, loose deposits.</p>
             </section>
 
@@ -201,6 +210,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What triggers a mandatory liquefaction assessment for a building consent in Gisborne?</summary><p>Under the Building Code clause B1, any structure classified as Importance Level 2 or higher on a site with a shallow groundwater table (within 4 m depth) and soils mapped as liquefiable by the GDC’s district plan typically requires a site-specific analysis. The presence of loose sands or silts in a borehole log to 10 m depth is a common trigger.</p></details><details><summary>How do you differentiate between global and localised liquefaction risk on a single Gisborne property?</summary><p>We run the CPT data through the soil behavior type index (Ic) to isolate truly contractive layers from dilative sands. A global risk means the entire bearing stratum can liquefy, while localised risk points to thin, discontinuous lenses—the latter may be mitigated with targeted ground improvement rather than a full deep foundation.</p></details><details><summary>What is the typical cost range for a full liquefaction study in Gisborne?</summary><p>A comprehensive study, including mobilisation, CPT soundings, data reduction, and a signed engineering report, generally falls between NZ$4,420 and NZ$6,920. The final figure depends on the number of soundings and whether pore pressure dissipation tests are required. <a href="/anchors/" data-interlink="1">More info</a>.</p></details>
             </section>
 

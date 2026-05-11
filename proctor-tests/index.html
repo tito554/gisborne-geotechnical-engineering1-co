@@ -25,7 +25,12 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
     .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
+    
 .servicio:hover { border-color: var(--primary); }
 
 details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
@@ -71,7 +76,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat-sub[hidden] { display: none; }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 summary::-webkit-details-marker { display: none; }
-    main { padding: 1.5rem; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -94,7 +99,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
@@ -132,7 +137,9 @@ details[open] summary::before { content: '− '; }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
-    .content-area { flex-direction: column; }</style>
+    
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>Local geotechnical conditions in Gisborne</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>The contrast between the Kaiti side of the river and the heavy pumice soils out towards Wainui Road illustrates why one Proctor curve never fits the whole city. Kaiti's weathered sandstone produces a gritty fill that compacts easily near optimum, while the Wainui silts can swing from too wet to too dry after a single afternoon of nor'easter drizzle. A contractor relying on a borrowed Proctor number from a different site often ends up over-compacting or leaving the fill soft. We see this frequently when imported fill comes from a quarry near Patutahi and gets placed on a site in Mangapapa: the lab curve shifts, and the field density fails. Getting a site-specific Proctor done early avoids costly re-rolling, failed council inspections, and delays that compound when the Tairawhiti weather window closes.</p>
             </section>
 
@@ -201,6 +210,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What does a Proctor test cost in Gisborne?</summary><p>A Standard Proctor test typically runs between NZ$190 and NZ$280, while a Modified Proctor ranges from NZ$280 to NZ$390 depending on the number of points on the curve and whether we need to process the sample beforehand. We quote a fixed price once we have the soil description.</p></details><details><summary>When do we need Modified Proctor instead of Standard?</summary><p>Modified Proctor is specified for structural fill under commercial slabs, road subgrades, and any earthworks where heavy compaction plant will be used. Standard Proctor applies to lightly loaded residential foundations, trench backfill, and landscaping where smaller compaction equipment is typical.</p></details><details><summary>How long does it take to get the Proctor result?</summary><p>A single-point Proctor for a known material can be turned around in one working day. A full five-point curve needed for a new borrow source usually takes two to three days, accounting for oven drying and precise moisture staging.</p></details><details><summary>Does the council accept your Proctor certificates in Gisborne?</summary><p>Yes. We operate an IANZ-accredited lab and our reports meet the requirements of Gisborne District Council for building consent earthworks inspections. The certificate shows maximum dry density, optimum moisture content, and the compaction curve, referenced to NZS 4402.</p></details>
             </section>
 

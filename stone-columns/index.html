@@ -25,7 +25,12 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
     .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
+    
 .servicio:hover { border-color: var(--primary); }
 
 details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
@@ -71,7 +76,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat-sub[hidden] { display: none; }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 summary::-webkit-details-marker { display: none; }
-    main { padding: 1.5rem; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -94,7 +99,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
@@ -132,7 +137,9 @@ details[open] summary::before { content: '− '; }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
-    .content-area { flex-direction: column; }</style>
+    
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>Local geotechnical conditions in Gisborne</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Gisborne’s low-lying commercial strips developed rapidly after the harbour improvements of the 1960s, often on fill placed over estuarine muds without modern compaction control. Those legacy deposits, combined with the city’s location less than 60 km from the Hikurangi subduction zone, create a dual risk: seismically-induced settlement and lateral spread displacement that can rupture buried services and undermine slab-on-grade floors. A stone column treatment programme addresses both mechanisms by densifying the granular interbeds and providing vertical drainage paths that dissipate pore pressure before it can trigger flow failure. Without this intervention, differential settlements of 100–200 mm are plausible for a moderate design earthquake, leading to costly structural repairs and business interruption. The design must also account for post-earthquake reconsolidation settlement in the silt layers, which is why the treatment depth is often extended beyond the purely liquefiable zone. By integrating the ground improvement scheme early in the structural design phase, the development team gains certainty on foundation type, floor slab articulation, and service entry details — all of which carry significant cost implications for a project on the Poverty Bay flats.</p>
             </section>
 
@@ -201,6 +210,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>How much does a stone column design and verification package cost for a typical Gisborne site?</summary><p>For a moderate commercial footprint, the combined design, specification, and post-treatment verification generally falls between NZ$2,600 and NZ$8,810, depending on the number of CPT soundings required and the complexity of the settlement model.</p></details><details><summary>How deep do stone columns need to go in the Poverty Bay flats?</summary><p>Column depth is dictated by the base of liquefiable material, which in Gisborne commonly lies between 6 m and 14 m. We extend the treatment into the underlying non-liquefiable stratum by at least 0.5 m to prevent punching failure at the column toe.</p></details><details><summary>Can stone columns be installed adjacent to existing buildings in central Gisborne?</summary><p>Yes, bottom-feed vibro-replacement rigs can work within 1.5 m of existing structures when vibration monitoring is in place. A pre-condition survey and vibration limit of 5 mm/s PPV are typically specified to protect neighbouring assets.</p></details><details><summary>What verification is required before council sign-off on the ground improvement?</summary><p>Gisborne District Council generally requires post-treatment CPT soundings on a 5–8 m grid, with at least one zone load test per 2,000 m² of treated area, all documented in a completion report referencing the NZGS ground improvement guidelines. <a href="/anchors/" data-interlink="1">More info</a>.</p></details>
             </section>
 

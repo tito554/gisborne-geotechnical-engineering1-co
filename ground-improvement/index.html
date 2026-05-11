@@ -22,7 +22,12 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
     .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
+    
 .servicio:hover { border-color: var(--primary); }
 
 details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
@@ -68,7 +73,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat-sub[hidden] { display: none; }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 summary::-webkit-details-marker { display: none; }
-    main { padding: 1.5rem; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -91,7 +96,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
@@ -129,7 +134,9 @@ details[open] summary::before { content: '− '; }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
-    .content-area { flex-direction: column; }</style>
+    
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","url":"https://gisborne.geotechnical-engineering1.co/ground-improvement/","inLanguage":"en","description":"Gisborne’s coastal geology, with its alluvial silts, estuarine deposits, and loose sands, often demands engineered ground improvement to meet NZS 4404 and","isPartOf":{"url":"https://gisborne.geotechnical-engineering1.co","@id":"https://gisborne.geotechnical-engineering1.co/#website","@type":"WebSite"},"name":"Ground improvement in Gisborne – New Zealand","@id":"https://gisborne.geotechnical-engineering1.co/ground-improvement/"},{"itemListElement":[{"item":"https://gisborne.geotechnical-engineering1.co/","name":"Home","@type":"ListItem","position":1},{"item":"https://gisborne.geotechnical-engineering1.co/ground-improvement/","name":"Ground improvement","@type":"ListItem","position":2}],"@type":"BreadcrumbList"},{"itemListElement":[{"url":"https://gisborne.geotechnical-engineering1.co/stone-columns/","name":"Stone column design","@type":"ListItem","position":1},{"url":"https://gisborne.geotechnical-engineering1.co/vibrocompaction/","name":"Vibrocompaction design","@type":"ListItem","position":2}],"@type":"ItemList","name":"Ground improvement"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -198,7 +205,14 @@ summary:hover { background: rgba(0,0,0,0.02); }
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../stone-columns/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Stone column design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../vibrocompaction/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Vibrocompaction design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/columnas-grava-5.webp" alt="Ground improvement in Gisborne" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Ground improvement in Gisborne addresses the engineering challenges posed by the region’s variable geology, which ranges from Holocene alluvial sediments of the Poverty Bay Flats to the sensitive volcanic ash soils and hill-slope colluvium. These soft, compressible, and often liquefiable soils demand targeted treatment to support residential, commercial, and infrastructure development. A robust ground improvement strategy begins with a comprehensive geotechnical <a href="/investigation/">investigation</a> to characterise subsurface conditions, identify weak layers, and quantify settlement and bearing capacity risks. The site characterisation is guided by the New Zealand Geotechnical Society guidelines and must align with the requirements of the Gisborne District Council’s Engineering Code of Practice to ensure compliance with the Building Act 2004.</p>
+<p>Methodologies applied in the Gisborne region follow NZGS Module 5 and relevant NZS standards, with selection driven by the soil profile revealed during the inquiry phase. Deep dynamic compaction, rigid inclusions, and stone columns are frequently deployed to mitigate liquefaction in the sandy silts of the floodplain, whereas cement-stabilised soil mixing proves effective in the soft clays near the Waimata River. The design and verification of these techniques rely heavily on in-situ testing, with the <a href="/cpt-test/">Cone Penetration Test (CPT)</a> serving as the primary tool for profiling stratigraphy and evaluating post-treatment improvement. Supplementary <a href="/lab-in-situ/">in-situ testing</a> such as shear wave velocity measurements and pressuremeter tests are integrated to calibrate stiffness gains and confirm that performance criteria are met.</p>
+<p>Typical projects in Gisborne include residential subdivisions on the outskirts of the city, where controlled modulus columns reduce total and differential settlement under lightweight structures, and commercial warehouse developments in the Awapuni industrial area, where ground improvement eliminates deep piling by creating a stiffened raft of treated ground. Roading and bridge approach embankments over soft ground also benefit from staged surcharging with prefabricated vertical drains, a technique validated by field density control using the <a href="/sand-cone-density/">sand cone density method</a>. Each project presents a unique interaction with the local geology, demanding a tailored combination of techniques to address compressibility, lateral spread, and bearing failure modes while respecting tight urban constraints and sensitive receiving environments.</p>
+<img src="/img/columnas-grava-5.webp" alt="Ground improvement in Gisborne" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>The delivery process follows a logical sequence from desktop study and site investigation through to treatment design, execution, and rigorous verification testing. Clients receive a factual report detailing the untreated ground model, a design report specifying the improvement method and acceptance parameters, and a close-out report with post-treatment test results that demonstrate compliance. This integrated approach, linking advanced laboratory characterisation of Atterberg limits and grain size distribution with field verification, delivers a reliable, cost-effective alternative to deep foundations. Engaging a specialist team that unites <a href="/foundations/">foundations</a> expertise with local geological knowledge ensures that ground improvement in Gisborne is executed safely, efficiently, and with full regulatory approval.</p></div></section></main>
     </div>
 </div>
 

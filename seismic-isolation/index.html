@@ -25,7 +25,12 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
     .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
+    
 .servicio:hover { border-color: var(--primary); }
 
 details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
@@ -71,7 +76,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat-sub[hidden] { display: none; }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 summary::-webkit-details-marker { display: none; }
-    main { padding: 1.5rem; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -94,7 +99,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
@@ -132,7 +137,9 @@ details[open] summary::before { content: '− '; }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
-    .content-area { flex-direction: column; }</style>
+    
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>Local geotechnical conditions in Gisborne</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>NZS 4203 places Gisborne in a moderate-to-high seismic hazard zone, and the 2007 Gisborne earthquake (M6.8) demonstrated how basin-edge effects can concentrate damage in the CBD even when the epicentre is 50 km away. A fixed-base structure on shallow footings in the Kaiti or Whataupoko hillslopes may perform adequately for life safety, but the repair downtime can stretch to 18 months, effectively killing the business case for the owner. Base isolation changes the risk equation: by limiting inter-storey drift to less than 0.5 percent and floor accelerations below 0.25g, the building meets immediate occupancy criteria under the design basis earthquake. The residual risk shifts to the isolation moat and utility crossings, which we detail with flexible couplings and stainless-steel bellows rated for the full vector sum of translational plus torsional displacement. Ignoring the isolation gap maintenance pathway is the single most common failure we observe in post-earthquake reconnaissance.</p>
             </section>
 
@@ -201,6 +210,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What is the typical cost range for base isolation design and peer review on a Gisborne commercial building?</summary><p>For a mid-rise commercial or institutional building in Gisborne, the combined design, peer review, and construction-phase testing oversight typically ranges from NZ$6,320 to NZ$16,030, depending on the number of isolator types, the complexity of the superstructure, and the extent of nonlinear time-history analysis required. This fee covers the PSHA, preliminary sizing, final design documentation, and the independent peer review package, but excludes the isolator hardware itself.</p></details><details><summary>How do you determine whether base isolation is justified over a conventional ductile frame in Gisborne?</summary><p>We run a loss-estimation comparison using FEMA P-58 methodology: compare the expected annual loss and downtime for a fixed-base ductile frame versus an isolated structure over a 50-year lifecycle. In Gisborne, where the subduction source produces long-duration shaking and the alluvial basin amplifies long periods, the isolated option often shows a 40 to 50 percent reduction in expected repair cost and a 70 percent reduction in business interruption time.</p></details><details><summary>What ground conditions in Gisborne are most favourable for base isolation?</summary><p>Base isolation works on most Gisborne soil profiles, but the design is most straightforward on Class C or competent Class D sites where the foundation mat can be made rigid enough to avoid differential isolator displacement. On very soft Class D or Class E sites near the Waimata River, we may need to combine the isolation system with ground improvement such as <a data-interlink="1" href="/stone-columns/">stone columns</a> to control total and differential settlement under the mat.</p></details><details><summary>Do you handle the isolator procurement and testing, or is that tendered separately?</summary><p>The reference range for this service in Gisborne is NZ$6.320 - NZ$16.030. The final price depends on the project scope and volume.</p></details>
             </section>
 

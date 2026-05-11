@@ -25,7 +25,12 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
     .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
+    
 .servicio:hover { border-color: var(--primary); }
 
 details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
@@ -71,7 +76,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
 .sidebar .cat-sub[hidden] { display: none; }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 summary::-webkit-details-marker { display: none; }
-    main { padding: 1.5rem; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -94,7 +99,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
@@ -132,7 +137,9 @@ details[open] summary::before { content: '− '; }
 
 .normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
 summary:hover { background: rgba(0,0,0,0.02); }
-    .content-area { flex-direction: column; }</style>
+    
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>Local geotechnical conditions in Gisborne</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>The 20-tonne truck-mounted CPT rig we use in Gisborne has a hydraulic ram that pushes a 15 cm² conical probe into the ground at a constant rate of two centimeters per second. If you skip this test on a Poverty Bay site and rely only on borehole logs, you risk missing a thin, loose sand layer at nine meters depth that will liquefy and eject sand boils across the floor slab. We have seen it happen. The cone picks up that drop in tip resistance instantaneously. Another real risk in this region is encountering artesian water pressures in the deeper gravels; the pore pressure transducer on the cone gives us an early warning before the drillers get into trouble. Without this continuous profile, you are designing blind, and in a city with a seismic hazard factor Z of 0.36, blind design is not an option.</p>
             </section>
 
@@ -201,6 +210,8 @@ summary:hover { background: rgba(0,0,0,0.02); }
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What does a CPT test cost in Gisborne?</summary><p>For a standard CPT push in the Gisborne area, you can expect to budget between NZ$250 and NZ$380 per meter, depending on depth, the need for a pre-drill through hard layers, and whether you add the seismic shear wave option. Mobilization costs are extra and depend on site access and distance from our base.</p></details><details><summary>How does CPT compare to standard SPT drilling for a Gisborne site?</summary><p>CPT gives a continuous profile of tip resistance and sleeve friction, while SPT gives a blow count every 1.5 meters. In the layered alluvial soils of the Poverty Bay flats, CPT is far better at detecting thin, weak seams that control liquefaction and settlement. SPT is still needed if you require a physical sample for lab testing; we often combine both methods on a single site.</p></details><details><summary>Can a CPT rig access tight sites in Gisborne city?</summary><p>Our standard rig is truck-mounted and needs about 3 meters of width and reasonable overhead clearance. For tighter backyards or hillside sections in areas like Whataupoko, we can deploy a smaller crawler-tracked penetrometer that fits through a standard gate, though it has a lower push capacity and may require a pre-drill in dense material.</p></details>
             </section>
 
